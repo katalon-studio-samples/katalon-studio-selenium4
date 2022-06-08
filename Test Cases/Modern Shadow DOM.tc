@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Example of accessing shadow DOM—including nested shadow DOM—using support in Selenium 4. 
+
+Based on Java example from Titus Fortner:
+
+https://titusfortner.com/2021/11/22/shadow-dom-selenium.html</description>
+   <name>Modern Shadow DOM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbb837fa-62fa-4c0a-886e-ec557dca1068</testCaseGuid>
+</TestCaseEntity>
