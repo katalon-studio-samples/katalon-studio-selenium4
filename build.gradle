@@ -17,4 +17,6 @@ dependencies {
   // compile 'io.rest-assured:json-path:3.2.0'
   // JSON Schema Validation
   // compile 'io.rest-assured:json-schema-validator:3.2.0'
+  // Selenium DevTools v102
+  compile 'org.seleniumhq.selenium:selenium-devtools-v101:4.1.4'
 }
