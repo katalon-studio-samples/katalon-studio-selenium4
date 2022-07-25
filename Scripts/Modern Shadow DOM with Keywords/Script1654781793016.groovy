@@ -31,7 +31,7 @@ DriverFactory.changeWebDriver(driver)
 
 WebUI.navigateToUrl('http://watir.com/examples/shadow_dom.html')
 
-CustomKeywords.'com.katalon.selenium4.helpers.ShadowDOM.clickFirstDoc'()
+CustomKeywords.'com.katalon.selenium4.helpers.ShadowDOM.clickAllTheWay'('#shadow_host>>>#nested_shadow_host', '#nested_shadow_content > div')
 
 WebUI.closeBrowser()
 

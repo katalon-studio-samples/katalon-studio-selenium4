@@ -25,7 +25,13 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.SearchContext
 import com.kms.katalon.core.testobject.TestObject as TestObject
 
-System.setProperty("webdriver.chrome.driver", "/opt/homebrew/bin/chromedriver")
+import com.kms.katalon.core.util.KeywordUtil
+
+driver_path = DriverFactory.getChromeDriverPath()
+KeywordUtil.logInfo(driver_path)
+
+//System.setProperty("webdriver.chrome.driver", "/opt/homebrew/bin/chromedriver")
+System.setProperty("webdriver.chrome.driver", driver_path)
 
 WebDriver driver = new ChromeDriver()
 

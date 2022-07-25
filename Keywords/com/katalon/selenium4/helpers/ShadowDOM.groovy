@@ -58,7 +58,7 @@ class ShadowDOM {
 	@Keyword
 	def clickFirstDoc() {
 		KeywordUtil.logInfo("Entering")
-		
+
 		// This will give you a SmartWaitWebDriver which will in turn return EventFiringWebElement
 		SmartWaitWebDriver not_the_webdriver_you_want = (SmartWaitWebDriver)DriverFactory.getWebDriver();
 		// therefore we need to get the wrapped driver out so that we can eventually call getShadowRoot()
@@ -73,6 +73,23 @@ class ShadowDOM {
 		def act = thumbImg.click();
 
 		KeywordUtil.logInfo("Exiting")
+	}
+
+	@Keyword
+	def clickAllTheWay(String shadowPath, String finalElement) {
+		SmartWaitWebDriver not_the_webdriver_you_want = (SmartWaitWebDriver)DriverFactory.getWebDriver();
+		// therefore we need to get the wrapped driver out so that we can eventually call getShadowRoot()
+		WebDriver wd = not_the_webdriver_you_want.getWrappedDriver();
+
+		SearchContext sc =  wd;
+		String[] shadowPathArray = shadowPath.split('>>>');
+		for (String root in shadowPathArray) {
+			WebElement rootElement = sc.findElement(By.cssSelector(root));
+			sc = rootElement.getShadowRoot();
+		}
+
+		WebElement finalElem = sc.findElement(By.cssSelector(finalElement)) ;
+		def act = finalElem.click();
 	}
 
 	static SearchContext getShadowElement(WebElement parentElement) {

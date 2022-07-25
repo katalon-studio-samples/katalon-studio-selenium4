@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Shadow Test Suite</name>
+   <name>Another Test Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,17 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>84a26694-f7bc-49df-ad7e-d799026e1050</testSuiteGuid>
+   <testSuiteGuid>d6474cfd-7635-4c05-b284-dabfbd501bdc</testSuiteGuid>
    <testCaseLink>
-      <guid>781a0e4a-44f6-4764-b65a-a44ed052ef96</guid>
+      <guid>1acd6d60-864b-47fd-a260-b7746f48342f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Modern Shadow DOM</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>81666acc-bb92-4545-a3e9-6e9c55fea819</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Modern Shadow DOM with Keywords</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

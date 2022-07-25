@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>Shadow DOM - Selenium 4</name>
+   <name>Katalon Studio - Selenium 4 Demos</name>
    <tag></tag>
    <UUID>e73b4b7c-0254-4706-a50b-0b2cb414aa38</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/coty/Code/katalon/samples/katalon-studio-selenium4/Shadow DOM - Selenium 4.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -24,5 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>WEBUI</type>
 </Project>
