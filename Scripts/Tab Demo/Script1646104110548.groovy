@@ -30,12 +30,11 @@ System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath(
 
 WebDriver driver = new ChromeDriver()
 
-println(driver)
+//println(driver)
 
 driver.get('http://automationpractice.com/index.php')
 
 // Automatically Open & Switch To The New Window Or Tab
-driver.manage().window().minimize()
 
 driver.switchTo().newWindow(WindowType.TAB).get('http://automationpractice.com/index.php?controller=authentication&back=my-account')
 
@@ -47,16 +46,16 @@ driver.findElement(By.id('email_create')).sendKeys('Selenium4@TAU.com')
 driver.findElement(By.id('SubmitCreate')).click()
 
 // Get The Window ID Handles
-Set<String> allWindowTabss = driver.getWindowHandles()
+Set<String> allWindowTabs = driver.getWindowHandles()
 
-Iterator<String> iterate = allWindowTabss.iterator()
+Iterator<String> iterate = allWindowTabs.iterator()
 
 String mainFirstWindow = iterate.next()
 
 // Switch & Work In The Main Window Or Tab
 driver.switchTo().window(mainFirstWindow)
 
-driver.manage().window().minimize()
+//driver.manage().window().minimize()
 
 driver.findElement(By.id('search_query_top')).sendKeys('Shirt')
 
@@ -64,4 +63,4 @@ driver.findElement(By.name('submit_search')).click()
 
 System.out.println('Title: ' + driver.getTitle())
 
-driver.close()
+driver.quit()
