@@ -6,7 +6,7 @@
    <UUID>e73b4b7c-0254-4706-a50b-0b2cb414aa38</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/coty/Code/katalon/samples/katalon-studio-selenium4/Shadow DOM - Selenium 4.prj</projectFileLocation>
+   <projectFileLocation>/Users/coty/Katalon Studio/Katalon Selenium 4 Demo/Shadow DOM - Selenium 4.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
